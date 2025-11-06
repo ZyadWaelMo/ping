@@ -1,12 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import AnimatedBackground from "@/components/AnimatedBackground";
+import HeroSection from "@/components/HeroSection";
+import PhotoCarousel from "@/components/PhotoCarousel";
+import SpecsSection from "@/components/SpecsSection";
+import GamesSection from "@/components/GamesSection";
+import LocationSection from "@/components/LocationSection";
+import Footer from "@/components/Footer";
+
+import gallery1 from "@/assets/gallery-1.jpg";
+import gallery2 from "@/assets/gallery-2.jpg";
+import gallery3 from "@/assets/gallery-3.jpg";
+import gallery4 from "@/assets/gallery-4.jpg";
+import gallery5 from "@/assets/gallery-5.jpg";
+import gallery6 from "@/assets/gallery-6.jpg";
 
 const Index = () => {
+  const galleryImages = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6];
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <AnimatedBackground />
+      <HeroSection />
+      <PhotoCarousel images={galleryImages} />
+      <SpecsSection />
+      <PhotoCarousel images={galleryImages} />
+      <GamesSection />
+      <LocationSection />
+      <Footer />
     </div>
   );
 };
