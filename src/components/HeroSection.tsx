@@ -9,13 +9,13 @@ const HeroSection = () => {
       <img 
         src={logo} 
         alt="PING Logo" 
-        className="w-48 h-auto md:w-64 lg:w-80 mb-8"
+        className="w-48 h-auto md:w-64 lg:w-80 mb-20"
         style={{
           filter: 'drop-shadow(0 0 15px rgba(255, 0, 0, 0.4))'
         }}
       />
-      <p className="text-sm md:text-base lg:text-lg font-gaming text-center mb-2 max-w-2xl">
-        PC Gaming Center based in Hadaek Al Qoba
+      <p className="text-sm md:text-base lg:text-lg font-gaming text-center mb-4 max-w-2xl">
+        PC Gaming Center <br /> based in Hadaek Al Qoba
       </p>
       <p className="text-xs md:text-sm lg:text-base font-gaming text-primary text-center">
         The Ultimate Experience

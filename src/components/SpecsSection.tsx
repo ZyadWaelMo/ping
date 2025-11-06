@@ -59,24 +59,22 @@ const SpecsSection = () => {
         </div>
         
         <div className="glass-card rounded-lg p-6 hover:glass-card-red transition-all duration-300">
-          <h3 className="text-lg md:text-xl font-gaming text-glow-white mb-4 text-center">
+          <h3 className="text-lg md:text-xl font-gaming text-glow-white mb-8 text-center">
             Maximize Your Game Time with PING Accounts!
           </h3>
-          <p className="text-xs md:text-sm font-gaming mb-4 leading-relaxed">
-            Unlock instant playtime with our tiered top-up bonuses. The more you load, the more free gaming time you earn.
-          </p>
+
           <div className="space-y-3">
             <p className="text-xs md:text-sm font-gaming">
-              <span className="text-primary">Starter Boost:</span> Load 50 LE and get 65 LE total credit.
+              <span className="text-primary">Starter Boost: <br /></span> Pay 50 LE and get 65 LE
             </p>
             <p className="text-xs md:text-sm font-gaming">
-              <span className="text-primary">Mid-Tier Multiplier:</span> Load 100 LE and instantly receive 140 LE to spend!
+              <span className="text-primary">Mid-Tier Multiplier: <br /></span> Pay 100 LE and get 140 LE 
             </p>
-            <p className="text-xs md:text-sm font-gaming">
-              <span className="text-primary">Ultimate Value:</span> Load 200 LE and receive a massive 280 LE total credit.
+            <p className="text-xs md:text-sm font-gaming pb-4">
+              <span className="text-primary">Ultimate Value: <br /></span> Pay 200 LE and get 280 LE 
             </p>
-            <p className="text-xs md:text-sm font-gaming">
-              <span className="text-primary">Keep Growing:</span> Receive an extra 40 LE bonus credit for every subsequent 100 LE you top up after the 200 LE tier.
+            <p className="text-xs md:text-sm font-gaming ">
+              <span className="text-primary">Keep Growing: <br /></span> Receive an extra 40 LE bonus credit for every subsequent 100 LE you top up after the 200 LE tier.
             </p>
           </div>
         </div>

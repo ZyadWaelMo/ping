@@ -9,28 +9,25 @@ const LocationSection = () => {
           Find Us
         </h2>
         
-        <div className="flex flex-col gap-6 mb-8">
+        <div className="mb-8">
           <a
             href="https://maps.app.goo.gl/MPeLSHDo7AMAqpWLA"
             target="_blank"
             rel="noopener noreferrer"
-            className="glass-card rounded-lg overflow-hidden hover:glass-card-red transition-all duration-300 group"
+            className="glass-card rounded-lg overflow-hidden hover:glass-card-red transition-all duration-300 group block relative"
           >
-            <div className="aspect-video bg-muted flex items-center justify-center">
-              <MapPin className="w-16 h-16 text-primary group-hover:scale-110 transition-transform" />
-            </div>
-            <p className="p-4 text-xs md:text-sm font-gaming text-center">
-              Click to Open Location
-            </p>
-          </a>
-          
-          <div className="glass-card rounded-lg overflow-hidden">
             <img
               src={place}
               alt="PING Gaming Center Location"
               className="w-full aspect-video object-cover"
             />
-          </div>
+            <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center">
+              <MapPin className="w-16 h-16 text-white group-hover:scale-110 transition-transform" />
+              <p className="text-xs md:text-sm font-gaming text-white mt-4">
+                Click to Open Location
+              </p>
+            </div>
+          </a>
         </div>
         
         <div className="flex justify-center gap-6">

@@ -83,10 +83,20 @@ export default {
             height: "0",
           },
         },
+        scroll: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-50% - 2rem))" }
+        },
+        "scroll-rtl": {
+          from: { transform: "translateX(calc(-50% - 2rem))" },
+          to: { transform: "translateX(0)" }
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "scroll": "scroll 30s linear infinite",
+        "scroll-rtl": "scroll-rtl 30s linear infinite",
       },
     },
   },
