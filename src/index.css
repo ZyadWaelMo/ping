@@ -73,17 +73,8 @@ All colors MUST be HSL.
 
 @layer utilities {
   .text-glow-white {
-    text-shadow: 0 0 10px hsl(var(--glow-white)),
-                 0 0 20px hsl(var(--glow-white)),
-                 0 0 30px hsl(var(--glow-white)),
-                 0 0 40px hsl(var(--glow-white));
-  }
-  
-  .text-glow-red {
-    text-shadow: 0 0 10px hsl(var(--glow-red)),
-                 0 0 20px hsl(var(--glow-red)),
-                 0 0 30px hsl(var(--glow-red)),
-                 0 0 40px hsl(var(--glow-red));
+    text-shadow: 0 0 8px hsl(var(--glow-white) / 0.5),
+                 0 0 15px hsl(var(--glow-white) / 0.3);
   }
   
   .glass-card {
@@ -105,6 +96,11 @@ All colors MUST be HSL.
 }
 
 @keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-fast {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }

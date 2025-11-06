@@ -15,12 +15,12 @@ const GamesSection = () => {
   return (
     <section className="py-16 relative z-10 overflow-hidden">
       <div className="relative">
-        <div className="flex animate-[scroll_30s_linear_infinite]">
+        <div className="flex animate-[scroll-fast_15s_linear_infinite] will-change-transform">
           <div className="flex whitespace-nowrap">
             {[...games, ...games].map((game, index) => (
               <span
                 key={index}
-                className="text-2xl md:text-4xl lg:text-5xl font-gaming text-primary text-glow-red mx-8"
+                className="text-2xl md:text-4xl lg:text-5xl font-gaming text-primary mx-8"
               >
                 {game}
               </span>

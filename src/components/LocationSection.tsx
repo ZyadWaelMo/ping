@@ -9,7 +9,7 @@ const LocationSection = () => {
           Find Us
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div className="flex flex-col gap-6 mb-8">
           <a
             href="https://maps.app.goo.gl/MPeLSHDo7AMAqpWLA"
             target="_blank"

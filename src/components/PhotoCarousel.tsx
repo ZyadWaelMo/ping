@@ -6,6 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 interface PhotoCarouselProps {
   images: string[];
@@ -26,39 +27,44 @@ const PhotoCarousel = ({ images }: PhotoCarouselProps) => {
   }, [api]);
 
   return (
-    <section className="py-16 px-4 relative z-10">
+    <section className="py-20 px-4 relative z-10">
       <Carousel
         opts={{
           align: "center",
           loop: true,
         }}
+        plugins={[
+          Autoplay({
+            delay: 2000,
+          }),
+        ]}
         setApi={setApi}
         className="w-full max-w-6xl mx-auto"
       >
-        <CarouselContent>
+        <CarouselContent className="-ml-2 md:-ml-4">
           {images.map((image, index) => (
             <CarouselItem
               key={index}
-              className="md:basis-1/2 lg:basis-1/3 flex items-center justify-center"
+              className="basis-4/5 sm:basis-3/5 md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4"
             >
               <div
                 className={`glass-card rounded-lg overflow-hidden transition-all duration-500 ${
                   current === index
-                    ? "scale-110 border-primary shadow-[0_0_30px_rgba(255,0,0,0.5)]"
+                    ? "scale-105 md:scale-110 border-primary shadow-[0_0_20px_rgba(255,0,0,0.3)]"
                     : "scale-90 opacity-60"
                 }`}
               >
                 <img
                   src={image}
                   alt={`Gallery ${index + 1}`}
-                  className="w-full h-64 md:h-80 object-cover"
+                  className="w-full h-48 sm:h-56 md:h-64 lg:h-72 object-cover"
                 />
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="glass-card text-primary border-primary hover:bg-primary hover:text-primary-foreground" />
-        <CarouselNext className="glass-card text-primary border-primary hover:bg-primary hover:text-primary-foreground" />
+        <CarouselPrevious className="glass-card text-primary border-primary hover:bg-primary hover:text-primary-foreground left-2 md:-left-12" />
+        <CarouselNext className="glass-card text-primary border-primary hover:bg-primary hover:text-primary-foreground right-2 md:-right-12" />
       </Carousel>
     </section>
   );
