@@ -1,5 +1,5 @@
 const AnimatedBackground = () => {
-  const icons = ['◆', '▲', '●', '■', '★', '◀', '▶', '♦', '♠', '♣', '▼', '◆', '⬟', '⬢', '⬣', '◈'];
+  const icons = ['◆', '▲', '●', '■', '★', '♦', '♠', '♣', '▼', '◆', '⬟', '⬢', '⬣', '◈'];
   
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
